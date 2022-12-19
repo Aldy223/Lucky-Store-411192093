@@ -48,7 +48,7 @@ class PenjualanController extends Controller
             'kode_pelanggan' => 'required',
             'kode_barang' => 'required',
             'jumlah_barang' => 'required',
-            'harga_barang' => 'nullable',
+            'harga_barang' => 'required',
         ]);
 
         Penjualan::create($request->all());
