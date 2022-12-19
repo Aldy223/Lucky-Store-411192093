@@ -40,10 +40,10 @@ class BarangController extends Controller
     {
         $request->validate([
             'kode_barang' => 'required',
-            'nama_barang' => 'nullable|string',
-            'deskripsi' => 'nullable',
-            'stok_barang' => 'nullable|integer',
-            'harga_barang' => 'nullable|integer',
+            'nama_barang' => 'required|string|min:5|max:20',
+            'deskripsi' => 'required|max:50',
+            'stok_barang' => 'required|numeric',
+            'harga_barang' => 'required|integer',
         ]);
 
         Barang::create($request->all());

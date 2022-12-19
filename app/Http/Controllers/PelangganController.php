@@ -41,9 +41,9 @@ class PelangganController extends Controller
         $request->validate([
             'kode_pelanggan' => 'required',
             'nama_pelanggan' => 'required|string',
-            'alamat' => 'nullable',
+            'alamat' => 'required|string|min:4|max:80',
             'nama_kota' => 'required|string',
-            'no_telepon' => 'required|string',
+            'no_telepon' => 'required|numeric',
         ]);
 
         Pelanggan::create($request->all());
