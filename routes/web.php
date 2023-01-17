@@ -14,6 +14,10 @@
 // use Illuminate\Routing\Route;
 use Illuminate\Support\Facades\Route;
 
+Auth::routes();
+
+//Route::get('/index', 'HomeController@index')->name('/');
+
 Route::get('/', function () {
     return view('/index');
 });
