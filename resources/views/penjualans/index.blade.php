@@ -5,10 +5,10 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>411192093 STORE Penjualan</h2>
+                <h2>411192093 DISTIBUTOR Suppliers</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('penjualans.create') }}">Tambah penjualan</a>
+                <a class="btn btn-success" href="{{ route('penjualans.create') }}">Tambah suppliers</a>
             </div>
         </div>
     </div>
@@ -22,11 +22,11 @@
     <table class="table table-bordered">
         <tr>
             <th>No</th>
-            <th>No Penjualan</th>
+            <th>No Supplier</th>
             <th>Tanggal</th>
             <th>Nama Barang</th>
-            <th>Nama Pelanggan</th>
-            <th>Kode Pelanggan</th>
+            <th>Nama Supplier</th>
+            <th>Kode Supplier</th>
             <th>Kode Barang</th>
             <th>Jumlah Barang</th>
             <th>Harga Barang</th>

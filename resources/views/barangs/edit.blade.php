@@ -28,7 +28,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Kode Barang:</strong>
-                <input type="text" name="kode_barang" value="{{ $barang->kode_barang }}" class="form-control">
+                <input type="text" name="kode_barang" value="{{ $barang->kode_barang }}" class="form-control" readonly>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
@@ -53,6 +53,12 @@
             <div class="form-group">
                 <strong>Harga Barang:</strong>
                 <input type="number" name="harga_barang" value="{{ $barang->harga_barang }}" class="form-control" placeholder="Masukkan Harga Barang">
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Created by:</strong>
+                <input type="text" name="created_by" value="{{ $barang->created_by }}" class="form-control" readonly>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">

@@ -3,10 +3,7 @@
 @section('content')
 <div class="row align-items-md-center">
     <div class="col-lg-6">
-        <h2>Tambah Data Penjualan</h2>
-    </div>
-    <div class="col-lg-6">
-        <a class="btn btn-primary" href="{{ route('penjualans.index') }}">Kembali</a>
+        <h2>Tambah Data Suppliers</h2>
     </div>
 </div>
 
@@ -27,9 +24,9 @@
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Nomor Penjualan :</strong>
+                <strong>Nomor Supplier :</strong>
                 <?php
-                $kode = 'J';
+                $kode = 'S';
                 $angka = mt_rand(0000, 9999);
 
                 $kodepenjualan = $kode . $angka;
@@ -45,7 +42,7 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Kode Pelanggan :</strong>
+                <strong>Kode Supplier :</strong>
                 <select class="form-select" name="kode_pelanggan" id="kode_pelanggan">
                     @foreach($pelanggans as $pelanggan)
                     <option value="{{ $pelanggan->kode_pelanggan }}">{{ $pelanggan->kode_pelanggan }}</option>
@@ -76,8 +73,10 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
-            <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+            <button name="submit" type="submit" class="btn btn-success">Submit</button>
+            <a class="btn btn-primary" href="{{ route('penjualans.index') }}">Kembali</a>
         </div>
+        
     </div>
 
 </form>

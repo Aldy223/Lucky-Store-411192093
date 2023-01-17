@@ -5,9 +5,7 @@
         <div class="pull-left">
             <h2> Detail Barang</h2>
         </div>
-        <div class="pull-right">
-            <a class="btn btn-primary" href="{{ route('barangs.index') }}"> Back</a>
-        </div>
+        
     </div>
 </div>
 
@@ -42,5 +40,14 @@
             {{ $barang->harga_barang }}
         </div>
     </div>
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="form-group">
+            <strong>Created By:</strong>
+            {{ $barang->created_by }}
+        </div>
+    </div>
 </div>
+<div class="pull-right">
+            <a class="btn btn-primary" href="{{ route('barangs.index') }}"> Back</a>
+        </div>
 @endsection

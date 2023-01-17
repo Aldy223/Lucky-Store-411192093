@@ -5,9 +5,6 @@
     <div class="col-lg-6">
         <h2>Tambah Barang</h2>
     </div>
-    <div class="col-lg-6">
-        <a class="btn btn-primary" href="{{ route('barangs.index') }}">Kembali</a>
-    </div>
 </div>
 
 @if ($errors->any())
@@ -62,9 +59,19 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
-            <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+            <div class="form-group">
+                <strong>Created By :</strong>
+                <input type="text" name="created_by" class="form-control" placeholder="{{ Auth::user()->name }} "
+        
+        </a>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <button name="submit" type="submit" class="btn btn-success">Submit</button>
+            <a class="btn btn-primary" href="{{ route('barangs.index') }}">Kembali</a>
         </div>
     </div>
+    
 
 </form>
 @endsection

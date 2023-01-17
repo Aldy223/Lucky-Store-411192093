@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>411192093 STORE Data Barang</h2>
+                <h2>411192093 DISTIBUTOR Data Barang</h2>
             </div>
             <div class="pull-right">
                 <a class="btn btn-success" href="{{ route('barangs.create') }}">Tambah Barang</a>
@@ -27,7 +27,8 @@
             <th>Deskripsi</th>
             <th>Stok Barang</th>
             <th>Harga Barang</th>
-            <th width="280px">Action</th>
+            <th width="280px" style= "text-align: center;">Action</th>
+            <th>Created By</th>
         </tr>
         @foreach ($barangs as $barang)
         <tr>
@@ -37,8 +38,8 @@
             <td>{{ $barang->deskripsi }}</td>
             <td>{{ $barang->stok_barang }}</td>
             <td>{{ $barang->harga_barang }}</td>
-            <td>
-                <form action="{{ route('barangs.destroy',$barang->id) }}" method="POST">
+            <td style= "text-align: center;">
+                <form action="{{ route('barangs.destroy',$barang->id) }}" method="POST" text-align: center;>
 
                     <a class="btn btn-info" href="{{ route('barangs.show',$barang->id) }}">Show</a>
 
@@ -50,6 +51,7 @@
                     <button type="submit" class="btn btn-danger">Delete</button>
                 </form>
             </td>
+            <td>{{ $barang->created_by }} </td>
         </tr>
         @endforeach
     </table>

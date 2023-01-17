@@ -28,7 +28,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Kode Pelanggan:</strong>
-                <input type="text" name="kode_pelanggan" value="{{ $pelanggan->kode_pelanggan }}" class="form-control" readonly>
+                <input type="text"  name="kode_pelanggan" value="{{ $pelanggan->kode_pelanggan }}" class="form-control" readonly>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">

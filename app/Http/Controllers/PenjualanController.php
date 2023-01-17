@@ -6,6 +6,7 @@ use App\Barang;
 use App\Pelanggan;
 use App\Penjualan;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class PenjualanController extends Controller
 {

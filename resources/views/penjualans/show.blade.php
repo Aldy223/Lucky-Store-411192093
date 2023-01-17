@@ -5,9 +5,6 @@
         <div class="pull-left">
             <h2>Detail Data Penjualan</h2>
         </div>
-        <div class="pull-right">
-            <a class="btn btn-primary" href="{{ route('penjualans.index') }}">Kembali</a>
-        </div>
     </div>
 </div>
 
@@ -49,4 +46,7 @@
         </div>
     </div>
 </div>
+<div class="pull-right">
+            <a class="btn btn-primary" href="{{ route('penjualans.index') }}">Kembali</a>
+        </div>
 @endsection

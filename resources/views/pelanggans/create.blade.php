@@ -5,9 +5,6 @@
     <div class="col-lg-6">
         <h2>Tambah Pelanggan</h2>
     </div>
-    <div class="col-lg-6">
-        <a class="btn btn-primary" href="{{ route('pelanggans.index') }}">Kembali</a>
-    </div>
 </div>
 
 @if ($errors->any())
@@ -62,7 +59,8 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
-            <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+            <button name="submit" type="submit" class="btn btn-success">Submit</button>
+            <a class="btn btn-primary" href="{{ route('penjualans.index') }}">Kembali</a>
         </div>
     </div>
 
